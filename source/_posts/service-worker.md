@@ -20,3 +20,4 @@ tags: js
 
 > dedicated worker(专一 worker), 这种worker只能在它的执行脚本中访问它本身，其它脚本不能访问。
 
+> share worker
