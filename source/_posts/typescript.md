@@ -306,7 +306,10 @@ class Clock implements ClockInterface {
 ```
 
 ### class
-> 
+> 传统的js使用函数和基于原型的继承方式来创建服用的组件，对于习惯object-oriented的方式的编程人员一开始会感觉有点奇怪，比如习惯了java的开发者。从es6开始，js支持class的写法来表达继承性
+
+1. 小例子
+
 
 
 
