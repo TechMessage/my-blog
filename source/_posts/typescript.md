@@ -306,7 +306,22 @@ class Clock implements ClockInterface {
 ```
 
 ### class
-> 
+
+> js是基于原型继承，这一点没有变，class的写法只是一种语法糖
+
+```
+class Person {
+    name: string  // 成员属性
+    constructor(name: string) {  //构造函数
+        this.name = name
+    }
+    getName() {   //原型方法
+        return this.name;
+    }
+}
+
+```
+> class的继承通过extends 显示声明，并且需要在子类的构造器中首先执行super()来执行父类的构造器
 
 
 
