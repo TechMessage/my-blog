@@ -323,6 +323,33 @@ class Person {
 ```
 > class的继承通过extends 显示声明，并且需要在子类的构造器中首先执行super()来执行父类的构造器
 
+```
+
+class Person {
+    name: string
+    age: number
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+
+class Student extends Person {
+    grade: string
+    constructor(name: string, age: number, grade: string) {
+        super(name, age)
+        this.grade = grade;
+    }
+}
+```
+
+> 访问修饰符，public protected private ，在java中，访问修饰符是控制一个类中的变量的可访问范围的限制，这种特性在js中并没有语言层面的规定。ts对此进行了特性的补充。class中的声明的变量默认是public的，protected声明的变量只能在本类以及子类中访问，private声明的变量只能在本类中使用。
+
+![protected](/images/Snipaste_2019-07-29_14-05-25.png)
+
+
+
 
 
 
